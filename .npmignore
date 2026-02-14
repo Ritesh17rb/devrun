@@ -1,0 +1,11 @@
+src/
+tsconfig.json
+.git/
+.gitignore
+*.log
+*.md
+!README.md
+LAUNCH_PLAN.md
+CONTRIBUTING.md
+node_modules/
+.DS_Store

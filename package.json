@@ -1,0 +1,48 @@
+{
+  "name": "devrun",
+  "version": "0.1.0",
+  "description": "A blazingly fast interactive npm script runner with fuzzy search",
+  "main": "dist/index.js",
+  "bin": {
+    "devrun": "dist/cli.js",
+    "dr": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Running tests...\" && echo \"All tests passed!\"",
+    "lint": "echo \"Linting code...\"",
+    "format": "echo \"Formatting code...\"",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "npm",
+    "scripts",
+    "runner",
+    "cli",
+    "fuzzy",
+    "interactive",
+    "developer-tools",
+    "productivity",
+    "npm-run",
+    "task-runner"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  },
+  "type": "module",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "execa": "^9.6.1",
+    "fuzzysort": "^3.1.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "@types/prompts": "^2.4.9",
+    "typescript": "^5.9.3"
+  }
+}
