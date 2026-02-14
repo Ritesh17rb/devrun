@@ -1,6 +1,6 @@
 {
   "name": "devrun",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A blazingly fast interactive npm script runner with fuzzy search",
   "main": "dist/index.js",
   "bin": {
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "tsc",
+    "postbuild": "chmod +x dist/cli.js",
     "dev": "tsc --watch",
     "test": "echo \"Running tests...\" && echo \"All tests passed!\"",
     "lint": "echo \"Linting code...\"",
