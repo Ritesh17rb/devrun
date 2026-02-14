@@ -1,6 +1,6 @@
 {
   "name": "devrun",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A blazingly fast interactive npm script runner with fuzzy search",
   "main": "dist/index.js",
   "bin": {
